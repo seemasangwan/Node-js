@@ -1,0 +1,7 @@
+Express js is a third party module
+const express=require("express")
+const app=express();
+const port=2000;
+app.listen(port,()=>
+{ console.log(" server is ready");}
+);
