@@ -1,0 +1,67 @@
+##Node js :---> It provide a  run time environment to run javascript on terminal
+usually we run javascript on broweser ----> which provide v8 engine to run js
+
+in node js everything is a module--> variable or function or complex function which can be reused 
+ we can tranfer module
+
+Types of Module
+1 File Base Module 
+   module.export name_of_your module
+   example index.js file1
+            const a=400;
+            console.log(a);
+            suppose a is our module and we want to use it another file for this firrst you have 
+            to export it
+            module.exports=a;
+
+            app.js another file
+            const a=require('./index")
+            console.log(a);
+ 2 Build In
+   no need to download 
+  important-->
+1)fs
+2)path
+3) os
+4)event 
+5)http
+{ mainly we create server using http
+ request,response,next->call back fn three parameters 
+
+after creatibg sever store in const and listen it 
+listen(portno., hotname, callback
+req.url('''''''')
+res.end(''''''''''')
+ }
+   example index.js
+    const fs=require("fs")
+    const path=require("path")
+  const os=require("os")
+  const http=require("http")
+     console.log(fs);
+// aschronouse meaning--> jab tak m apna kaam kr rha hun tab koi kaam ruke na
+by defalut asyn 
+other wise use sync 
+ 3. Third Party
+which are code by others but we can use them by downloading them
+1)express
+2)moongoose
+3)pokemon
+4) nodemon (used to run file need once write nodemon in terminal)
+   npm install nodemon-->current folder
+   npm intall nodemon -g --->globally
+  const pokemon=require("pokemon")
+
+
+##NPM
+It is node package manager
+
+## Express---> It is a framework of node js
+   how to install
+  npm install express--->run this command on terminal
+## Package.json---> contain data of our project
+                 name , author,version, description
+                dependencies etc
+
+## Package-lock.json--->contain  meta data of dependencies
+
